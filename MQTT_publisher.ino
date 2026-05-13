@@ -2,15 +2,15 @@
 #include <PubSubClient.h>
 
 
-const char* ssid = "xxx";
-const char* password = "xxx";
+const char* ssid = "Esp32 workshop";
+const char* password = "VinhoVerde";
 const char* mqtt_server = "broker.emqx.io";
-const char* topic = "bernas/door/state";
+const char* topic = "esp32/workshop/26";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
 
-void callback(char* topic, byte* payload, unsigned int length)  //Funcao que analisa as mensagens recebidas
+/*void callback(char* topic, byte* payload, unsigned int length)  //Funcao que analisa as mensagens recebidas
 {
   String message;
   Serial.println("Message Received");
@@ -19,7 +19,7 @@ void callback(char* topic, byte* payload, unsigned int length)  //Funcao que ana
     message += (char)payload[i];
   }
 
-}
+}*/
 
 void reconnect() {
   // Caso se perca a conexão
@@ -61,7 +61,7 @@ void setup() {
   delay(1000);
 
   client.setServer(mqtt_server, 1883);
-  client.setCallback(callback);
+  //client.setCallback(callback);
 }
 
 void loop() {
