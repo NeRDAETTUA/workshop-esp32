@@ -7,4 +7,4 @@ Só utilizem estes ficheiros caso não estejam a conseguir realizar a parte da a
 Caso utilizem estes ficheiros, analizem-nos e identifiquem possíveis erros de lógica comparado com o vosso código original
 
 Primeiro Workshop
-https://www.canva.com/design/DAHHQP2hKxA/prHyOQYe6Sk_-PLj_BZfVA/edit
+https://canva.link/wczppwqdhm1cy82
